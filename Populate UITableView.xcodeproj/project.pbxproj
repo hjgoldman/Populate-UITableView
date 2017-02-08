@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		3AA3E13F1E4B8CA4004305FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3E13E1E4B8CA4004305FC /* main.m */; };
 		3AA3E1421E4B8CA4004305FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3E1411E4B8CA4004305FC /* AppDelegate.m */; };
-		3AA3E1451E4B8CA4004305FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3E1441E4B8CA4004305FC /* ViewController.m */; };
 		3AA3E1481E4B8CA4004305FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3E1461E4B8CA4004305FC /* Main.storyboard */; };
 		3AA3E14A1E4B8CA4004305FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3E1491E4B8CA4004305FC /* Assets.xcassets */; };
 		3AA3E14D1E4B8CA4004305FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3E14B1E4B8CA4004305FC /* LaunchScreen.storyboard */; };
 		3AA3E1561E4B8EC5004305FC /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3E1551E4B8EC5004305FC /* TasksTableViewController.m */; };
 		3AA3E15C1E4B950D004305FC /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3E15B1E4B950D004305FC /* Task.m */; };
+		3AA3E15F1E4BBB7A004305FC /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3E15E1E4BBB7A004305FC /* TaskCell.m */; };
+		3AA3E1621E4BBCD3004305FC /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3E1611E4BBCD3004305FC /* TaskCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +23,6 @@
 		3AA3E13E1E4B8CA4004305FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AA3E1401E4B8CA4004305FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AA3E1411E4B8CA4004305FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3AA3E1431E4B8CA4004305FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3AA3E1441E4B8CA4004305FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3AA3E1471E4B8CA4004305FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AA3E1491E4B8CA4004305FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA3E14C1E4B8CA4004305FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +31,9 @@
 		3AA3E1551E4B8EC5004305FC /* TasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
 		3AA3E15A1E4B950D004305FC /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		3AA3E15B1E4B950D004305FC /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		3AA3E15D1E4BBB7A004305FC /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		3AA3E15E1E4BBB7A004305FC /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		3AA3E1611E4BBCD3004305FC /* TaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,13 @@
 		3AA3E13C1E4B8CA4004305FC /* Populate UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				3AA3E1601E4BBBA3004305FC /* Custom Cell */,
 				3AA3E1401E4B8CA4004305FC /* AppDelegate.h */,
 				3AA3E1411E4B8CA4004305FC /* AppDelegate.m */,
-				3AA3E1431E4B8CA4004305FC /* ViewController.h */,
-				3AA3E1441E4B8CA4004305FC /* ViewController.m */,
-				3AA3E1541E4B8EC5004305FC /* TasksTableViewController.h */,
-				3AA3E1551E4B8EC5004305FC /* TasksTableViewController.m */,
 				3AA3E15A1E4B950D004305FC /* Task.h */,
 				3AA3E15B1E4B950D004305FC /* Task.m */,
+				3AA3E1541E4B8EC5004305FC /* TasksTableViewController.h */,
+				3AA3E1551E4B8EC5004305FC /* TasksTableViewController.m */,
 				3AA3E1461E4B8CA4004305FC /* Main.storyboard */,
 				3AA3E1491E4B8CA4004305FC /* Assets.xcassets */,
 				3AA3E14B1E4B8CA4004305FC /* LaunchScreen.storyboard */,
@@ -87,6 +88,16 @@
 				3AA3E13E1E4B8CA4004305FC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AA3E1601E4BBBA3004305FC /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3E15D1E4BBB7A004305FC /* TaskCell.h */,
+				3AA3E15E1E4BBB7A004305FC /* TaskCell.m */,
+				3AA3E1611E4BBCD3004305FC /* TaskCell.xib */,
+			);
+			name = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA3E1621E4BBCD3004305FC /* TaskCell.xib in Resources */,
 				3AA3E14D1E4B8CA4004305FC /* LaunchScreen.storyboard in Resources */,
 				3AA3E14A1E4B8CA4004305FC /* Assets.xcassets in Resources */,
 				3AA3E1481E4B8CA4004305FC /* Main.storyboard in Resources */,
@@ -161,8 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA3E15F1E4BBB7A004305FC /* TaskCell.m in Sources */,
 				3AA3E15C1E4B950D004305FC /* Task.m in Sources */,
-				3AA3E1451E4B8CA4004305FC /* ViewController.m in Sources */,
 				3AA3E1421E4B8CA4004305FC /* AppDelegate.m in Sources */,
 				3AA3E1561E4B8EC5004305FC /* TasksTableViewController.m in Sources */,
 				3AA3E13F1E4B8CA4004305FC /* main.m in Sources */,

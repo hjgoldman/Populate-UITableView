@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Task.h"
+#import "TaskCell.h"
 
 @interface TasksTableViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 

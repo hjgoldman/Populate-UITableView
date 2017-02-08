@@ -34,7 +34,7 @@
     task4.title = @"Fill the basketball up with air";
     
     Task *task5 = [[Task alloc] init];
-    task5.title = @"Shoot the basketball into the basketball hoop";
+    task5.title = @"Shoot hoops";
     
     [self.tasks addObject:task1];
     [self.tasks addObject:task2];
@@ -55,11 +55,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UITableViewCell *cell = [[UITableViewCell alloc]init];
+    
     Task *task = self.tasks[indexPath.row];
+    
     cell.textLabel.text = task.title;
     return cell;
     
 }
+
+
 
 
 
